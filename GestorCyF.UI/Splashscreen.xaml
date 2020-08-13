@@ -1,0 +1,28 @@
+﻿<Window x:Class="GestorCyF.UI.Splashscreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestorCyF.UI"
+        mc:Ignorable="d"
+        Title="Splashscreen" Height="230" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Foreground="{x:Null}" WindowStyle="None" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+            <Image Source="D:\Descargas\GestorCyF\GestorCyF\GestorCyF.UI\Imagenes\Logo.png" Height="150"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1">
+            <Label Content="      Clutch y Frenos Huichapan" FontWeight="Bold" Foreground="#303F9F" FontSize="20 " FontFamily="Bahnschrift"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" VerticalAlignment="Center">
+            <ProgressBar Name="pbBarraProgreso" Value="2" Foreground="#303F9F" Width="390" Height="8" Minimum="0" Maximum="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
